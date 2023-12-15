@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AccountsSuite">
+	<groups>
+		<run>
+			<exclude name="brokenTests" />
+			<include name="checkinTests" />
+		</run>
+	</groups>
+
+	<test name="AccountsTest">
+		<classes>
+			<class name="jarvis.scripts.accountservices.AccountSummary">
+				<methods>
+					<exclude name="test_AccountsDashboard" />
+				</methods>
+			</class>
+			<class name="jarvis.scripts.accountservices.AccountWidgets" />
+		</classes>
+	</test>
+</suite> 
