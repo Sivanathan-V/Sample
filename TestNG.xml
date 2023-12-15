@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Parallel Testing Suite">
+   <test name = "Footer_PrivacyPolicyTest" >
+      <classes>
+         <class name = "demo.scripts.PrivacyPolicy" />
+      </classes>
+   </test>
+   
+   <test name = "Header_OurMarketTest" >
+      <classes>
+         <class name = "demo.scripts.UnlistedCorporate" />
+      </classes>
+   </test>
+   
+    <test name = "Header_MarketNewsReportsTest" >
+      <classes>
+         <class name = "demo.scripts.MarketNewsReports" />
+      </classes>
+   </test>
+    
+   
+</suite>
